@@ -360,8 +360,8 @@ final class ClientTest extends TestCase
         $client = new GeoNamesClient(
             $this->config['username'],
             $this->config['token'],
-            ['apiUrl' => 'http://api.geonames.org']
+            ['apiUrl' => 'https://api.geonames.org']
         );
-        $this->assertEquals('http://api.geonames.org', $client->getApiUrl());
+        $this->assertEquals('https://api.geonames.org', $client->getApiUrl());
     }
 }

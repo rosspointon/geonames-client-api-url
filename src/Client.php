@@ -192,7 +192,9 @@ class Client
      *
      * @param string $username Required for both Free and Commercial users.
      * @param string|null $token Optional. Commercial users only.
-     * @param array{apiUrl: ?string} $options Optional - override target URL
+     * @param array{
+     *     apiUrl?: string,
+     * } $options Optional. Client options.
      */
     public function __construct(string $username, string $token = null, array $options = [])
     {
